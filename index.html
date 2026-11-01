@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OUR UNIVERSE | BISO &amp; MAY</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Cairo:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="bgPhoto"></div>
+<canvas id="sparks"></canvas>
+<canvas id="confetti"></canvas>
+<button id="musicBtn" title="Music">♪</button>
+<audio id="bgm" loop preload="auto"></audio>
+<div id="lightbox"><img alt=""></div>
+
+<!-- 0 Login -->
+<section class="screen active" data-step="login">
+  <h1 class="cin gold">OUR UNIVERSE</h1>
+  <p class="lead">أهلًا بيكى ي ست البنات</p>
+  <input id="pw" type="password" inputmode="numeric" autocomplete="off" placeholder="••••••">
+  <button class="btn" id="enter">دخول</button>
+  <div id="err"></div>
+</section>
+
+<!-- 1 Welcome -->
+<section class="screen" data-step="welcome">
+  <div class="hero" id="heroBox"></div>
+  <div class="names cin gold">BISO &amp; MAY</div>
+  <h2 class="cin gold">Welcome To Our World</h2>
+  <p class="lead" id="welcomeText"></p>
+  <button class="btn next">ابدأ حكايتنا</button>
+</section>
+
+<!-- 2 Beginning -->
+<section class="screen" data-step="begin">
+  <h2 class="cin gold">The Beginning</h2>
+  <p class="lead" id="beginText"></p>
+  <button class="btn next">التالي</button>
+</section>
+
+<!-- 3 Memories -->
+<section class="screen" data-step="memories">
+  <h2 class="cin gold">Our Memories</h2>
+  <div class="gallery" id="gallery"></div>
+  <label class="addph">+ إضافة صور</label>
+  <input type="file" id="addFile" accept="image/*" multiple hidden>
+  <button class="btn next">التالي</button>
+</section>
+
+<!-- 4 Counter -->
+<section class="screen" data-step="counter">
+  <h2 class="cin gold">Our Time Together</h2>
+  <div class="counter" id="since"></div>
+  <p class="lead" style="margin-top:14px">من 26 نوفمبر 2024 — الساعة 8:30 مساءً</p>
+  <button class="btn next">التالي</button>
+</section>
+
+<!-- 5 Birthdays -->
+<section class="screen" data-step="bdays">
+  <h2 class="cin gold">Birthdays</h2>
+  <div id="bdays"></div>
+  <button class="btn next">التالي</button>
+</section>
+
+<!-- 6 Letter -->
+<section class="screen" data-step="letter">
+  <h2 class="cin gold">A Secret Letter</h2>
+  <div class="env" id="env"><i>♥</i></div>
+  <p class="lead" id="hint">اضغط على الظرف</p>
+  <div id="letter"></div>
+</section>
+
+<div class="dots" id="dots"></div>
+
+<script src="config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
